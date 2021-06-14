@@ -1,5 +1,34 @@
 @extends("layouts.master")
 
 @section("contenido")
-    <h1>Hola soy home</h1>
+    <div class="row mt-5">
+        <div class="col-12 col-md-6 col-lg-5 mx-auto">
+            <div class="card">
+                <div class="card-header bg-warning text-white">
+                    <span>Agregar consola</span>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label for="nombre-txt" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre-txt">
+                    </div>
+                    <div class="mb-3">
+                        <label for="marca-select" class="form-label">Marca</label>
+                        <select class="form-select" id="marca-select">
+                            <option value="Microsoft">Microsoft</option>
+                            <option value="Sony">Sony</option>
+                            <option value="Nintendo">Nintendo</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="anio-txt" class="form-label">Año de lanzamiento</label>
+                        <input type="number" class="form-control" id="anio-txt">
+                    </div>
+                </div>
+                <div class="card-footer d-grid gap-1">
+                    <button class="btn btn-info">Registrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
