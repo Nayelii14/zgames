@@ -26,7 +26,7 @@
                 <a class="nav-link" href="{{route('ver_consolas')}}">Ver consolas</a>
                 <a class="nav-link" href="{{route('ver_juegos')}}">Ver juegos</a>
                 <a class="nav-link" href="{{route('agregar_juego')}}">Agregar juegos</a>
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                
             </div>
         </div>
         </div>
@@ -41,7 +41,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="{{asset('js/axios_config.js')}}"></script>
-
+    @yield("javascript")
 
   </body>
 </html>
