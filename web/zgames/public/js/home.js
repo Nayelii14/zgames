@@ -12,3 +12,16 @@ const cargarMarcas = async()=>{
 };
 
 cargarMarcas();
+
+document.querySelector("#registrar-btn").addEventListener("click", async ()=>{
+    let nombre = document.querySelector("#nombre-txt").value;
+    let marca = document.querySelector("#marca-select").value;
+    let anio = document.querySelector("#anio-txt").value;
+    let consola = {};
+    consola.nombre = nombre;
+    consola.marca = marca;
+    consola.anio = anio;
+
+    let resp = await crearConsola(consola);
+    Swal.fire("Consola creada", "Consola creada", "info");
+});

@@ -13,6 +13,9 @@ class CrearTablaConsolas extends Migration
      */
     public function up()
     {
+        //Modelo orientado a objetos:
+        //Base de datos relacional + POO
+        //Crear clases para que la tabla se cree sola.
         Schema::create('consolas', function (Blueprint $table) {
             $table->id();
             $table->string("nombre",150);
